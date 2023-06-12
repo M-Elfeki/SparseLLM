@@ -20,3 +20,9 @@ python prune_dolly.py databricks/dolly-v2-12b c4 1 2 --save sparse_dolly_12/
 
 This will apply 1:2 semi-structured sparsity to Dolly 12B using c4 dataset for pruning and save the sparse model to sparse_dolly_12/
 Currently, it runs on CPU, but it takes time. You can use smaller models if you want faster experimenting time or if you don't have enough memory
+
+
+### Required Libraries
+torch: tested on v1.10.1+cu111
+transformers: tested on v4.21.2
+datasets: tested on v1.17.0
