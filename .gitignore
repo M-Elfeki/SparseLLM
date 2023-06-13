@@ -1,0 +1,8 @@
+__pycache__/datautils.cpython-39.pyc
+__pycache__/instruct_pipeline.cpython-39.pyc
+__pycache__/sparsegpt.cpython-39.pyc
+checkpoints/sparse_dolly_12/config.json
+checkpoints/sparse_dolly_12/pytorch_model-00001-of-00003.bin
+checkpoints/sparse_dolly_12/pytorch_model-00002-of-00003.bin
+checkpoints/sparse_dolly_12/pytorch_model-00003-of-00003.bin
+checkpoints/sparse_dolly_12/pytorch_model.bin.index.json

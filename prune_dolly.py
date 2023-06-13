@@ -9,7 +9,7 @@ import torch.nn.functional as F
 from datautils import *
 from sparsegpt import *
 
-DEV = 'cpu'
+DEV = 'cuda'
 
 def get_dolly(model="databricks/dolly-v2-12b"):
     def skip(*args, **kwargs):
