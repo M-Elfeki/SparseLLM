@@ -1,7 +1,11 @@
 # SparseLLM
-Applying Sparsity to LLMs and exploring whether they can be structurally pruned as a result.
+Applying Sparsity to LLMs and exploring whether they can be compressed.
+
+Result is: A 1:2 sparse LLM can be compressed up to 53% of its original size without loss of accuracy or change of output at all.
+The loss of accuracy only happens on the sparsification process, but if this succeeded, then compression is lossless.
+
+
 Mainly using SparseGPT: https://arxiv.org/abs/2301.00774
-Also, worth looking into LoRA: https://arxiv.org/pdf/2106.09685.pdf
 
 ## Sparse LLMs
 ### Models
@@ -20,6 +24,9 @@ python prune_dolly.py databricks/dolly-v2-12b c4 1 2 --save sparse_dolly_12/
 
 This will apply 1:2 semi-structured sparsity to Dolly 12B using c4 dataset for pruning and save the sparse model to sparse_dolly_12/
 Currently, it runs on CPU, but it takes time. You can use smaller models if you want faster experimenting time or if you don't have enough memory
+
+### How to compress a pruned model
+Review VerifySparseReorderDolly.ipynb
 
 
 ### Required Libraries
